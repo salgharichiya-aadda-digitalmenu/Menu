@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiffinbox Kawasoti | Digital Menu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#111,#000);
+color:white;
+overflow-x:hidden;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+h1{
+text-align:center;
+color:#f39c12;
+font-size:42px;
+animation:fadeDown 1s ease;
+}
+
+.subtitle{
+text-align:center;
+opacity:.8;
+margin-bottom:40px;
+}
+
+.section{
+margin-top:40px;
+font-size:24px;
+border-left:5px solid #f39c12;
+padding-left:10px;
+animation:fadeIn 1s ease;
+}
+
+.item{
+display:flex;
+justify-content:space-between;
+padding:12px 0;
+border-bottom:1px dashed #444;
+transition:.3s;
+animation:fadeUp .8s ease;
+}
+
+.item:hover{
+color:#f39c12;
+transform:translateX(8px);
+}
+
+.price{
+font-weight:600;
+color:#f39c12;
+}
+
+@keyframes fadeDown{
+from{opacity:0;transform:translateY(-20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+@media(max-width:768px){
+h1{font-size:30px;}
+.item{font-size:15px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Tiffinbox Kawasoti</h1>
+<div class="subtitle">Digital Menu</div>
+
+<div class="section">Tiffinbox Special</div>
+<div class="item"><span>Special MoMo Platter</span><span class="price">Rs.430</span></div>
+<div class="item"><span>Tornado Potato</span><span class="price">Rs.190</span></div>
+<div class="item"><span>Hot Chicken Wings</span><span class="price">Rs.350</span></div>
+
+<div class="section">Soup</div>
+<div class="item"><span>Hot & Sour Soup</span><span class="price">Rs.150/200</span></div>
+<div class="item"><span>Manchow Soup</span><span class="price">Rs.150/200</span></div>
+
+<div class="section">MoMo</div>
+<div class="item"><span>Chicken Steam MoMo</span><span class="price">Rs.150</span></div>
+<div class="item"><span>Buff Steam MoMo</span><span class="price">Rs.140</span></div>
+<div class="item"><span>Veg Steam MoMo</span><span class="price">Rs.130</span></div>
+
+<div class="section">Chowmein</div>
+<div class="item"><span>Chicken Chowmein</span><span class="price">Rs.170</span></div>
+<div class="item"><span>Buff Chowmein</span><span class="price">Rs.160</span></div>
+<div class="item"><span>Veg Chowmein</span><span class="price">Rs.150</span></div>
+
+<div class="section">Beverages</div>
+<div class="item"><span>Tea</span><span class="price">Rs.30</span></div>
+<div class="item"><span>Coffee</span><span class="price">Rs.60</span></div>
+<div class="item"><span>Cold Drinks</span><span class="price">Rs.60/90</span></div>
+
+</div>
+
+</body>
+</html>
